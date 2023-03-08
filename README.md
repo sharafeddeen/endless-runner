@@ -12,8 +12,9 @@ Two possible scenarios here:
 2) Same scenario as 1, but your ship gets wrecked and you're left with a longboard that you can use to surf.
 
 ## Environment
-The environment 
+This section describes the separate elements that constitute the environment, as well as how they all come together to form the environment.
 
-## Game Mechanics
+## Game Mechanics & Physics
+This section descrbies the physics of the game: the rules for the interaction of objects in the environment, and the rules for how the player interacts with the environment.
 
 ## Notes (misc.)
