@@ -32,20 +32,18 @@ public class FloatingObject : MonoBehaviour
     {
         floatersUnderWater = 0;
 
-        for (int i = 0; i < floaters.Length; i++)
-        {
-            float difference = floaters[i].position.y - waterHeight;
+        float difference = m_Rigidbody.position.y - waterHeight;
 
-            if (difference < 0)
+        if (difference < 0)
+        {
+            m_Rigidbody.AddForceAtPosition(Vector3.up * floatingPower * Mathf.Abs(difference), m_Rigidbody.position, ForceMode.Force);
+            floatersUnderWater++;
+            if (!underwater)
             {
-                m_Rigidbody.AddForceAtPosition(Vector3.up * floatingPower * Mathf.Abs(difference), floaters[i].position, ForceMode.Force);
-                floatersUnderWater++;
-                if (!underwater)
-                {
-                    underwater = true;
-                    SwitchState(true);
-                }
+                underwater = true;
+                SwitchState(true);
             }
+        
         }
 
         if (underwater && floatersUnderWater == 0)
