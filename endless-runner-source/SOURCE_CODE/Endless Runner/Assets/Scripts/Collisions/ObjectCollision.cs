@@ -42,7 +42,6 @@ public class ObjectCollision : MonoBehaviour
         //obtain previous values
         importedCoins = PlayerPrefs.GetInt("TotalCoins");
         //add current values
-        importedCoins += GlobalCoinsGems.coinCount;
         //save new values
         PlayerPrefs.SetInt("TotalCoins", importedCoins);
         //continue as normal

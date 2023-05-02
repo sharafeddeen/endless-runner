@@ -1712,20 +1712,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd41581ec0f6f964583ae9e02785a360, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theCharacter: {fileID: 784769414}
-  dustParts: {fileID: 0}
-  theCamera: {fileID: 965032656}
-  collideEffect: {fileID: 1250469132}
-  footSteps: {fileID: 0}
-  fadeOut: {fileID: 0}
-  endPanel: {fileID: 0}
-  scoringPanels:
-  - {fileID: 0}
-  - {fileID: 904352490}
-  - {fileID: 0}
-  importedDistance: 0
-  importedCoins: 0
-  importedGems: 0
 --- !u!23 &111941256
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1800,13 +1786,10 @@ GameObject:
   - component: {fileID: 125982532}
   - component: {fileID: 125982531}
   - component: {fileID: 125982533}
-  - component: {fileID: 125982534}
-  - component: {fileID: 125982535}
   - component: {fileID: 125982536}
-  - component: {fileID: 125982537}
-  - component: {fileID: 125982538}
   - component: {fileID: 125982540}
   - component: {fileID: 125982539}
+  - component: {fileID: 125982541}
   m_Layer: 0
   m_Name: GlobalControl
   m_TagString: Untagged
@@ -1860,40 +1843,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   internalCheck: 0
---- !u!114 &125982534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 125982530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9c097e87450c494ba0cb5d6fd35b11c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinDisplay: {fileID: 904352490}
-  gemDisplay: {fileID: 0}
-  endCoin: {fileID: 0}
-  endGem: {fileID: 0}
-  internalCoin: 0
-  internalGem: 0
---- !u!114 &125982535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 125982530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21c07a34a26e9ff4990aff7eaf3a275c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  continueButton: {fileID: 0}
-  fadeOut: {fileID: 0}
-  randomReward: 0
-  buttonPressed: 0
 --- !u!114 &125982536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1906,38 +1855,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ec6e2cbb6a26a4eb5366e0a033eb65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &125982537
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 125982530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ca2d42e0164cb74db7f71818d373bd6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  internalLife: 0
-  lifeDisplay: {fileID: 0}
-  firstStart: 0
---- !u!114 &125982538
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 125982530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e84d53a90a1aaf4fb2f34fb612e0bd9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  internalTimmy: 0
-  internalMousey: 0
-  internalDoozy: 0
-  internalClaire: 0
-  internalBoss: 0
 --- !u!114 &125982539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1968,6 +1885,24 @@ MonoBehaviour:
   buttonText: {fileID: 1036699725}
   controlsEnabled: 0
   internalLayout: 0
+--- !u!114 &125982541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125982530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 993fd20188e143a42b4e9deb970a3cd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinDisplay: {fileID: 904352490}
+  gemDisplay: {fileID: 0}
+  endCoin: {fileID: 904352490}
+  endGem: {fileID: 0}
+  internalCoin: 0
+  internalGem: 0
 --- !u!1 &143002266
 GameObject:
   m_ObjectHideFlags: 0
@@ -2657,9 +2592,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 701ef0ce25aee0b4ba8d2d4464ea238c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AchUI: {fileID: 0}
-  distanceRan: 0
-  startTracking: 0
 --- !u!114 &156404224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2672,7 +2604,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af430d3aff91f4f4bac528e9b6f6dd02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AchUI: {fileID: 0}
 --- !u!114 &156404225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2685,9 +2616,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e543bd86066ca044a9e784b2e6190f67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AchUI: {fileID: 0}
-  jumpCount: 0
-  isJumping: 0
 --- !u!114 &156404226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2700,7 +2628,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d63bdb14590b45f4f9a38bf66eb30e68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AchUI: {fileID: 0}
 --- !u!114 &156404227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2713,8 +2640,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cc8b7ee48f6c3e4e9852d240e07c573, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AchUI: {fileID: 0}
-  testac: 0
 --- !u!114 &156404228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2727,7 +2652,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1947cd5b12105404b9aa21777d16aed7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AchUI: {fileID: 0}
 --- !u!114 &156404229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2740,9 +2664,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d3025d3e2c490747a3d411a9b78f936, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AchUI: {fileID: 0}
-  internalCounted: 0
-  countSec: 0
 --- !u!850595691 &160858542
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -3720,20 +3641,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd41581ec0f6f964583ae9e02785a360, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theCharacter: {fileID: 784769414}
-  dustParts: {fileID: 0}
-  theCamera: {fileID: 965032656}
-  collideEffect: {fileID: 1250469132}
-  footSteps: {fileID: 0}
-  fadeOut: {fileID: 0}
-  endPanel: {fileID: 0}
-  scoringPanels:
-  - {fileID: 0}
-  - {fileID: 904352490}
-  - {fileID: 0}
-  importedDistance: 0
-  importedCoins: 0
-  importedGems: 0
 --- !u!23 &291778090
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6939,12 +6846,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d73af246920aec47904700353b9158d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreDisplay: {fileID: 0}
-  endScore: {fileID: 0}
-  myScore: 0
-  addingScore: 0
-  increaseToSpeed: 0.4
-  timeValue: 1
 --- !u!1 &504021973 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 98711950272329592, guid: f04b4db25d269e848808b7d8764f1a11,
@@ -9941,20 +9842,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd41581ec0f6f964583ae9e02785a360, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theCharacter: {fileID: 784769414}
-  dustParts: {fileID: 0}
-  theCamera: {fileID: 965032656}
-  collideEffect: {fileID: 1250469132}
-  footSteps: {fileID: 0}
-  fadeOut: {fileID: 0}
-  endPanel: {fileID: 0}
-  scoringPanels:
-  - {fileID: 0}
-  - {fileID: 904352490}
-  - {fileID: 0}
-  importedDistance: 0
-  importedCoins: 0
-  importedGems: 0
 --- !u!23 &744671736
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10446,7 +10333,6 @@ MonoBehaviour:
   - {fileID: 0}
   importedDistance: 0
   importedCoins: 0
-  importedGems: 0
 --- !u!143 &784769416
 CharacterController:
   m_ObjectHideFlags: 0
@@ -19398,20 +19284,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd41581ec0f6f964583ae9e02785a360, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theCharacter: {fileID: 784769414}
-  dustParts: {fileID: 0}
-  theCamera: {fileID: 965032656}
-  collideEffect: {fileID: 1250469132}
-  footSteps: {fileID: 0}
-  fadeOut: {fileID: 0}
-  endPanel: {fileID: 0}
-  scoringPanels:
-  - {fileID: 0}
-  - {fileID: 904352490}
-  - {fileID: 0}
-  importedDistance: 0
-  importedCoins: 0
-  importedGems: 0
 --- !u!23 &1605401428
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22732,20 +22604,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd41581ec0f6f964583ae9e02785a360, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theCharacter: {fileID: 784769414}
-  dustParts: {fileID: 0}
-  theCamera: {fileID: 965032656}
-  collideEffect: {fileID: 1250469132}
-  footSteps: {fileID: 0}
-  fadeOut: {fileID: 0}
-  endPanel: {fileID: 0}
-  scoringPanels:
-  - {fileID: 0}
-  - {fileID: 904352490}
-  - {fileID: 0}
-  importedDistance: 0
-  importedCoins: 0
-  importedGems: 0
 --- !u!23 &1951337570
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23050,20 +22908,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd41581ec0f6f964583ae9e02785a360, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theCharacter: {fileID: 784769414}
-  dustParts: {fileID: 0}
-  theCamera: {fileID: 965032656}
-  collideEffect: {fileID: 1250469132}
-  footSteps: {fileID: 0}
-  fadeOut: {fileID: 0}
-  endPanel: {fileID: 0}
-  scoringPanels:
-  - {fileID: 0}
-  - {fileID: 904352490}
-  - {fileID: 0}
-  importedDistance: 0
-  importedCoins: 0
-  importedGems: 0
 --- !u!33 &1961687498
 MeshFilter:
   m_ObjectHideFlags: 0

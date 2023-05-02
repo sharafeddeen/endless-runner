@@ -10,7 +10,7 @@ public class CoinCollision : MonoBehaviour
     {
         collideCoin.Play();
         this.gameObject.SetActive(false);
-        GlobalCoinsGems.coinCount += 1;
+        GlobalCoins.coinCount += 1;
     }
 
 }

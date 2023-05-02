@@ -8,7 +8,7 @@ public class GeneralStageReset : MonoBehaviour
 
     void Start()
     {
-        GlobalCoinsGems.coinCount = 0;
+        GlobalCoins.coinCount = 0;
     }
 
 }

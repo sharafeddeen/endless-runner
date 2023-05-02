@@ -419,7 +419,7 @@
 "Assets/Scripts/Generation/ThreeRandom.cs"
 "Assets/Scripts/PlayerControl.cs"
 "Assets/Scripts/Scoring/CoinCollision.cs"
-"Assets/Scripts/Scoring/GlobalCoinsGems.cs"
+"Assets/Scripts/Scoring/GlobalCoins.cs"
 "Assets/Scripts/Scoring/GlobalUnlocks.cs"
 "Assets/Scripts/Scoring/ObjectRotate.cs"
 "Assets/Scripts/TestJoys.cs"
